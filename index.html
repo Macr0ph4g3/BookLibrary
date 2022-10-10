@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="header">
+        <h1>Library</h1>
+        <h1>Log in</h1>
+    </div>
+
+
+    <div class="addBook">
+        <input class="addBookbtn" type="button" value="Add Book" onclick="showHide()">
+    </div>
+
+
+    <div id="form" style="visibility: hidden;">
+    <form >
+       <div>
+        <label for="Title">Title:</label>
+            <input type="text" name="title" id="title" placeholder="Title" required>
+        </div>
+        <div>
+
+        <label for="Author">Author:</label>
+        <input type="text" name="author" id="author" placeholder="Author" required>
+    </div>
+    <div>
+
+        <label for="Pages">Pages:</label>
+        <input type="number" name="pages" id="pages" placeholder="1" min="1" required>
+    </div>
+
+        <div>
+        <label for="Read">Read?</label required>
+        <input type="checkbox" name="read" id="read"> 
+        </div>
+        <div>
+
+        </div>
+
+        <button type="button" class="addToLibrary" onclick="submitForm()">Add To Library</button>
+    </form>
+</div>
+
+<div class="container">
+    <div id="bookGrid"></div>
+</div>
+
+</body>
+<script src="/script.js"></script>
+
+</html>

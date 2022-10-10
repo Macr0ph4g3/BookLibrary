@@ -1,0 +1,99 @@
+/* HTML5 display-role reset for older browsers
+Meyer CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    background-color: #a7a5c6;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #7385a3;
+    height: 112px;
+    align-items: center;
+    font-size: 50px;
+    background-color: #8797B2;
+}
+
+
+#form {
+    display: flex;
+    justify-content: center;
+    height: 5px;
+    visibility: visible;
+    align-items: center
+}
+
+
+.addBook {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+#bookGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 1500px;
+    justify-items: center;
+}
+
+#bookGrid .Book {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}
+
+.bookCard {
+    height: 250px;
+    width: 250px;
+    background-color: #66ced6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.addBookbtn {
+    border: none;
+    height: 100px;
+    width: 200px;
+    transition-duration: 0.3s;
+    color: white;
+    background-color: #6D8A96;
+    border-radius: 15px;
+}
+
+.addBookbtn:hover {
+    background-color: #8097a1;
+}
+
